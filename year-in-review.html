@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Bli Bli FY25-26 Year in Review</title>
+<style>
+  :root{
+    --accent:#4c2230;
+    --accent-soft:#fbeee7;
+    --flag:#b3401f;
+    --ink:#111111;
+    --body:#222222;
+    --muted:#666666;
+    --hint:#888888;
+    --line:#e6e6e6;
+    --heading-font:'RecifeDisplay Light',Georgia,'Times New Roman',serif;
+    --body-font:'Centra No2 Book',Arial,Helvetica,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:#f4f4f4;
+    font-family:var(--body-font);
+    color:var(--body);
+    line-height:1.5;
+  }
+  .wrap{max-width:600px;margin:0 auto;background:#ffffff;}
+  .pad{padding:0 22px;}
+  img{max-width:100%;display:block;}
+
+  header.top{padding:22px 22px 18px;}
+  .logo-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;}
+  .logo-row img{width:130px;}
+
+  .team{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:6px;}
+  .team-member{flex:1;display:flex;gap:10px;align-items:center;}
+  .team-member img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;}
+  .team-name{font-size:13px;font-weight:700;color:var(--ink);}
+  .team-contact{font-size:11.5px;color:var(--muted);line-height:1.6;}
+  .team-contact a{color:var(--muted);text-decoration:none;}
+  .team-divider{width:1px;background:var(--line);}
+
+  .tagline{font-size:12px;color:var(--muted);margin:10px 0 0;}
+
+  .eyebrow{
+    font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--accent);font-weight:700;font-family:var(--body-font);
+    margin:26px 0 8px;
+  }
+  h1{
+    font-family:var(--heading-font);
+    font-size:24px;font-weight:400;line-height:1.3;
+    color:var(--ink);margin:0 0 12px;
+  }
+  .lead{font-size:14.5px;color:var(--body);margin:0 0 22px;}
+
+  .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+  .stat-card{border:1px solid var(--line);border-radius:14px;padding:14px 14px;}
+  .stat-num{font-family:var(--heading-font);font-size:22px;color:var(--ink);margin:0 0 3px;}
+  .stat-lbl{font-size:11.5px;color:var(--muted);line-height:1.4;}
+  .stat-chg{font-size:11px;font-weight:700;margin-top:6px;}
+  .stat-chg.up{color:#1f7a4d;}
+  .stat-chg.down{color:var(--flag);}
+
+  h2.section-h{
+    font-family:var(--heading-font);
+    font-size:17px;font-weight:400;color:var(--ink);
+    margin:30px 0 4px;
+  }
+  h3.sub-h{
+    font-family:var(--body-font);
+    font-size:14.5px;font-weight:700;color:var(--ink);
+    margin:18px 0 8px;
+  }
+  p.body-copy{font-size:14px;line-height:22px;color:var(--body);margin:0 0 14px;}
+
+  .q-wrap{margin:16px 0 6px;}
+  .q-block{margin-bottom:18px;}
+  .q-head{
+    font-family:var(--body-font);font-size:14px;font-weight:700;color:var(--ink);
+    padding-bottom:7px;border-bottom:2px solid var(--accent);margin-bottom:8px;
+  }
+  .q-block.flag{background:var(--accent-soft);border-radius:10px;padding:12px 14px;}
+  .q-block.flag .q-head{border-bottom-color:var(--flag);}
+  table.q-table{width:100%;border-collapse:collapse;font-size:13px;}
+  table.q-table td{padding:8px 0;}
+  table.q-table tr.q-labels td{color:var(--hint);font-size:10.5px;text-transform:uppercase;letter-spacing:0.5px;text-align:right;}
+  table.q-table tr.q-labels td:first-child{text-align:left;}
+  table.q-table tr.q-labels td.fy26{color:var(--accent);}
+  table.q-table tr.data td{border-top:1px solid var(--line);}
+  .q-block.flag table.q-table tr.data td{border-top:1px solid rgba(0,0,0,0.08);}
+  table.q-table tr.data td:first-child{color:var(--muted);text-align:left;width:38%;}
+  table.q-table tr.data td:nth-child(2){text-align:right;}
+  table.q-table tr.data td:nth-child(3){text-align:right;padding-left:12px;font-weight:700;}
+  .q-note{font-size:11px;color:var(--hint);margin:8px 0 0;}
+
+  .callout{
+    background:var(--accent-soft);border-left:3px solid var(--flag);border-radius:0 10px 10px 0;
+    padding:14px 16px;margin:16px 0;
+  }
+  .callout strong{display:block;font-size:13.5px;color:var(--ink);margin-bottom:4px;}
+  .callout p{font-size:13.5px;line-height:20px;color:var(--body);margin:0;}
+
+  ul.bullets{margin:0 0 6px;padding-left:18px;}
+  ul.bullets li{font-size:14px;line-height:21px;color:var(--body);margin-bottom:10px;}
+
+  .cta-block{text-align:center;padding:8px 22px 4px;}
+  .btn{
+    display:inline-block;background:var(--accent);color:#ffffff !important;
+    text-decoration:none;font-weight:700;font-size:14px;
+    padding:13px 26px;border-radius:10px;font-family:var(--body-font);
+  }
+  .cta-sub{font-size:12px;color:var(--muted);margin-top:8px;}
+
+  footer{padding:24px 22px 30px;text-align:center;}
+  .footer-phone{font-size:12px;color:var(--muted);margin:16px 0 18px;}
+  .footer-phone a{color:var(--accent);font-weight:700;text-decoration:underline;}
+  .footer-logo{width:150px;margin:0 auto 16px;}
+  .disclaimer{font-size:10px;line-height:15px;color:#aaaaaa;}
+
+  @media (max-width:480px){
+    .team{flex-direction:column;}
+    .team-divider{display:none;width:auto;height:1px;}
+    h1{font-size:21px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="logo-row">
+      <img src="https://mcgrathsc.com.au/wp-content/uploads/2024/02/dark-logo.png" alt="McGrath">
+    </div>
+    <div class="team">
+      <div class="team-member">
+        <img src="https://mcgrathsc.com.au/wp-content/uploads/2025/06/David-Swarbrick.jpg" alt="David Swarbrick">
+        <div>
+          <div class="team-name">David Swarbrick</div>
+          <div class="team-contact"><a href="tel:0437938410">0437 938 410</a><br><a href="mailto:davidswarbrick@mcgrath.com.au">davidswarbrick@mcgrath.com.au</a></div>
+        </div>
+      </div>
+      <div class="team-divider"></div>
+      <div class="team-member">
+        <img src="https://mcgrathsc.com.au/wp-content/uploads/2025/06/Todd-McKee.jpg" alt="Todd McKee">
+        <div>
+          <div class="team-name">Todd McKee</div>
+          <div class="team-contact"><a href="tel:0418737197">0418 737 197</a><br><a href="mailto:toddmckee@mcgrath.com.au">toddmckee@mcgrath.com.au</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="tagline">Local specialists &bull; Honest advice &bull; Proven results</div>
+  </header>
+
+  <div class="pad">
+    <div class="eyebrow">FY2025&ndash;26 Year in Review</div>
+    <h1>Bli Bli&rsquo;s property year, by the numbers.</h1>
+    <p class="lead">A full look back at the financial year just closed &mdash; sale prices, volumes, and what&rsquo;s shaping the market heading into FY26-27.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-num">$1.15m</div>
+        <div class="stat-lbl">Median house price, FY25-26</div>
+        <div class="stat-chg up">&#9650; 15% on FY24-25</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">173</div>
+        <div class="stat-lbl">Houses sold, FY25-26</div>
+        <div class="stat-chg">28 days median on market</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">20</div>
+        <div class="stat-lbl">Land sales, FY25-26</div>
+        <div class="stat-chg up">&#9650; from 10 in FY24-25</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">&lt;30</div>
+        <div class="stat-lbl">Sales, June quarter</div>
+        <div class="stat-chg down">&#9660; vs 40&ndash;62 every other quarter</div>
+      </div>
+    </div>
+
+    <h2 class="section-h">Market pulse</h2>
+    <h3 class="sub-h">A strong year overall, with a soft finish</h3>
+    <p class="body-copy">Bli Bli&rsquo;s median house price climbed from $1m in FY24-25 to $1.15m in FY25-26 &mdash; a 15% lift across the year, built on steady, broad-based demand rather than a single hot quarter.</p>
+
+    <div class="q-wrap">
+      <div class="q-block">
+        <div class="q-head">Jul&ndash;Sep</div>
+        <table class="q-table">
+          <tr class="q-labels"><td></td><td>FY24-25</td><td class="fy26">FY25-26</td></tr>
+          <tr class="data"><td>Sales</td><td>45</td><td>62</td></tr>
+          <tr class="data"><td>Median $</td><td>$1m</td><td>$1.14m</td></tr>
+        </table>
+      </div>
+      <div class="q-block">
+        <div class="q-head">Oct&ndash;Dec</div>
+        <table class="q-table">
+          <tr class="q-labels"><td></td><td>FY24-25</td><td class="fy26">FY25-26</td></tr>
+          <tr class="data"><td>Sales</td><td>53</td><td>40</td></tr>
+          <tr class="data"><td>Median $</td><td>$940k</td><td>$1.146m</td></tr>
+        </table>
+      </div>
+      <div class="q-block">
+        <div class="q-head">Jan&ndash;Mar</div>
+        <table class="q-table">
+          <tr class="q-labels"><td></td><td>FY24-25</td><td class="fy26">FY25-26</td></tr>
+          <tr class="data"><td>Sales</td><td>46</td><td>53</td></tr>
+          <tr class="data"><td>Median $</td><td>$1.05m</td><td>$1.16m</td></tr>
+        </table>
+      </div>
+      <div class="q-block flag">
+        <div class="q-head">Apr&ndash;Jun</div>
+        <table class="q-table">
+          <tr class="q-labels"><td></td><td>FY24-25</td><td class="fy26">FY25-26</td></tr>
+          <tr class="data"><td>Sales</td><td>51</td><td>&lt;30*</td></tr>
+          <tr class="data"><td>Median $</td><td>$1.05m</td><td>$1.19m</td></tr>
+        </table>
+      </div>
+      <p class="q-note">*Settled sales to date, plus sales currently awaiting settlement. Some further June sales may still register over coming weeks.</p>
+    </div>
+
+    <div class="callout">
+      <strong>The June quarter cooled &mdash; worth watching, not worrying about.</strong>
+      <p>Every quarter over the past two years has landed between 40 and 62 sales. The June 2026 quarter came in under 30 &mdash; a clear step down. Prices held up regardless (the highest quarterly median of the year, in fact), so this reads as fewer transactions rather than softer values.</p>
+    </div>
+
+    <h3 class="sub-h">Land selling briskly on the back of two estates</h3>
+    <p class="body-copy">Land sales nearly doubled year-on-year &mdash; 20 in FY25-26 versus 10 in FY24-25 &mdash; almost entirely driven by ongoing releases at Camelot Court and Camp Flat Road. Land median held steady around $680k&ndash;$685k across both years.</p>
+
+    <h2 class="section-h">National snapshot</h2>
+    <ul class="bullets">
+      <li><strong>The national market has stalled.</strong> Cotality&rsquo;s Home Value Index fell 0.4% in June &mdash; the steepest monthly drop in three and a half years &mdash; though values are still 7.3% higher than a year ago. Sydney and Melbourne are leading the pullback, now 2.1% and 2.9% below their November 2025 peaks.</li>
+      <li><strong>Brisbane (and the Sunshine Coast) are still rising, just more slowly.</strong> Brisbane&rsquo;s median dwelling value sits around $1.12m, up 17.4% annually, but quarterly growth has eased to 1.3% from 3.4% the quarter before &mdash; the same loss of momentum showing up in Bli Bli&rsquo;s sales volumes.</li>
+      <li><strong>Rates on hold, for now.</strong> The RBA held the cash rate at 4.35% in June. The next call is 11 August, with the 29 July CPI print likely to decide whether a fourth hike is on the table.</li>
+      <li><strong>Renters are feeling it more than owners.</strong> National vacancy rates sit at a record-low 1.5% and rents are up 5.9% annually &mdash; even as sale prices cool, the shortage of rental stock isn&rsquo;t easing, which continues to support investor yields.</li>
+      <li><strong>Investor tax changes are adding uncertainty.</strong> Proposed federal budget changes to negative gearing and capital gains tax concessions are expected to be legislated, likely to cool established-market investor activity further over the second half of 2026.</li>
+    </ul>
+  </div>
+
+  <div class="cta-block">
+    <a class="btn" href="https://www.realestate.com.au/appraisal?agentIds=3929136&campaignType=internal&campaignChannel=in_product&campaignSource=rea&campaignName=sell_enq&campaignPlacement=agent_header&campaignKeyword=agency_marketplace">Get a free appraisal of your home</a>
+    <div class="cta-sub">Based on what buyers are actually paying right now.</div>
+  </div>
+
+  <footer>
+    <div class="footer-phone">Prefer a quick call/text? David: <a href="tel:0437938410">0437 938 410</a></div>
+    <img class="footer-logo" src="https://i.imgur.com/vYe4LTz.png" alt="McGrath - Guiding you home">
+    <div class="disclaimer">Sale prices are sourced from publicly available data and are provided as general information only. They may not reflect the full sale conditions or individual property features. National figures sourced from Cotality Home Value Index and RBA, June 2026.</div>
+  </footer>
+
+</div>
+</body>
+</html>
